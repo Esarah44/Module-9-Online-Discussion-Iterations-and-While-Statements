@@ -13,3 +13,14 @@ while num <= 70:
     num += 1
 
 print(tens)
+
+#additional list to check vowels
+tens = []
+vowels = []
+for counter in range(20, 71):
+     if counter % 10 ==0:
+         tens.append(counter)
+     if chr(counter) in ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']:
+         vowels.append(chr(counter))
+print("tens ", tens)
+print("vowels ", vowels)
